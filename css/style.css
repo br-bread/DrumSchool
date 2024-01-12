@@ -19,15 +19,22 @@ section {
     padding: 0px 0;
 }
 
-
 .main-heading {
-    font-weight: bold;
     color: white;
     text-shadow: 0 3px 4px rgba(0,0,0,.6);
 }
 
+hr {
+    display: block;
+    height: 1px;
+    width:90%;
+    border: 0;
+    border-top: 2px solid #fff;
+    padding: 0;
+}
+
 .carousel .carousel-item {
-    height: 40vw;
+    height: 35vw;
 }
 
 .carousel-item img {
@@ -43,5 +50,5 @@ section {
   bottom: 15%;
   left: 5%;
   z-index: 20;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
