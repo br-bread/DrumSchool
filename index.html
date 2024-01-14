@@ -1,121 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <title>Школа Барабанов +2</title>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=" /img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/img/favicon/site.webmanifest">
-
     <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.css">
 
-    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script> 
-      $(function(){
-        $("#header").load("includes/header.html");
-        $("#footer").load("includes/footer.html"); 
-      });
-    </script> 
-    
-  </head>
-  <body>
-
-    <div id="header"></div>
-
-    <main>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="container carousel-content">
-                  <div class="row align-items-center justify-content-center">
-                      <div class="col-12 text-center">
-                          <p style="font-size:8vw; font-family:Impact, fantasy" class="main-heading">
-                              Школа Барабанов +2
-                          </p>
-                      </div>
-                  </div>
-                  <div class="row">
+</head>
+<body>
+{% include "includes/header.html" %}
+<main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="container carousel-content">
+                <div class="row align-items-center justify-content-center">
                     <div class="col-12 text-center">
-                      <p class="main-heading" style="font-size: 2vw; font-weight: bold; font-family: Courier New, monospace">
-                        г. Сыктывкар, ул. Орджоникидзе 49а | ✆ 89125470345
-                      </p>
+                        <p style="font-size:8vw; font-family:Impact, fantasy" class="main-heading">
+                            Школа Барабанов +2
+                        </p>
                     </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <p style="color: var(--pink-color); font-size: 2vw; font-weight: bold; font-family: Courier New, monospace">
+                      г.Сыктывкар, ул.Орджоникидзе 49а | ✆ 89125470345
+                    </p>
                   </div>
-              </div>
-              <div class="carousel-item active" data-bs-interval="5000">
-                  <img src="img/carousel/1.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <img src="img/carousel/2.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <img src="img/carousel/3.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <img src="img/carousel/4.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <img src="img/carousel/5.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                  <img src="img/carousel/6.jpg" class="d-block w-300" alt="Drummers">
-              </div>
-          </div>
+                </div>
+            </div>
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/carousel/1.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/carousel/2.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/carousel/3.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/carousel/4.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/carousel/5.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/carousel/6.jpg" class="d-block w-300" alt="Drummers">
+            </div>
+        </div>
+    </div>
+<section>
+      <div class="container px-4 py-4">
+          <hr class="text-white text-center col-12">
+<h1 class="pb-2 text-white" >С нами ты сможешь:</h1>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-white">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square flex-shrink-0 me-3">
+            <img src="img/icons_svg/drumset.svg" alt="icon" width="60px" height="60px">
+        </div>
+        <div>
+          <h2 style="color: var(--pink-color); ">Покорить ударную установку</h2>
+            <br>
+          <p class="lead">Обучаем игре на барабанах с нуля! Мы считаем, что с верным подходом к обучению хороших результатов может добиться каждый</p>
+
+        </div>
       </div>
-  <section>
-        <div class="container px-4 py-4">
-            <hr class="text-white text-center col-12">
-  <h1 class="pb-2 text-white" >С нами ты сможешь:</h1>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-white">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square flex-shrink-0 me-3">
-              <img src="img/icons_svg/drumset.svg" alt="icon" width="60px" height="60px">
-          </div>
-          <div>
-            <h2 style="font-weight: bold; font-family: Courier New, monospace">Покорить ударную установку</h2>
-              <br>
-            <p>Обучаем игре на барабанах с нуля! Мы считаем, что с верным подходом к обучению хороших результатов может добиться каждый</p>
-  
-          </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square flex-shrink-0 me-3">
+          <img src="img/icons_svg/music.svg" alt="icon" width="60px" height="60px">
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square flex-shrink-0 me-3">
-            <img src="img/icons_svg/music.svg" alt="icon" width="60px" height="60px">
-          </div>
-          <div>
-            <h2 style="font-weight: bold; font-family: Courier New, monospace">Записать собственный кавер</h2>
-              <br>
-            <p>Поможем записать на видео кавер любимой песни! В нашей студии для этого даже есть специальный декорированный уголок</p>
-          </div>
+        <div>
+          <h2 style="color: var(--pink-color); ">Записать собственный кавер</h2>
+            <br>
+          <p class="lead">Поможем записать на видео кавер любимой песни! В нашей студии для этого даже есть специальный декорированный уголок</p>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square flex-shrink-0 me-3">
-            <img src="img/icons_svg/amplifier.svg" alt="icon" width="60px" height="60px">
-          </div>
-          <div>
-            <h2 style="font-weight: bold; font-family: Courier New, monospace">Выступить на публику</h2>
-              <br>
-            <p>Научим бороться с неуверенностью и страхами, подготовим к концертам в Сыктывкаре, Кирове и даже Санкт-Петербурге!</p>
-  
-          </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square flex-shrink-0 me-3">
+          <img src="img/icons_svg/concert.svg" alt="icon" width="60px" height="60px">
         </div>
+        <div>
+          <h2 style="color: var(--pink-color); ">Выступить на публику</h2>
+            <br>
+          <p class="lead">Научим бороться с неуверенностью и страхами, подготовим к концертам в Сыктывкаре, Кирове и даже Санкт-Петербурге!</p>
+
+        </div>
+      </div>
+
+    </div>
+          <div class="col-12 text-center">
+              <h3 class="pb-2 text-white" >Первое занятие - <b style="color: var(--pink-color)">бесплатно</b>!</h3>
+          </div>
+  </div>
+
+</section>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center">
+
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5 text-white">Записаться на занятия</h2>
+          <p class="lead text-white main-link">Чтобы записаться, напишите нам в <a href="https://vk.com/romatyanschool">вк</a></p>
+      </div>
+      <div class="icon-square flex-shrink-0 me-3">
+            <img src="img/icons_svg/drum.svg" alt="icon" width="200px" height="200px">
+        </div>
+    </div>
+
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5 text-white">Шоу барабанщиков</h2>
+        <p class="lead text-white main-link">Посмотреть наши выступления можно в <a href="https://vk.com/drumshowplus2">группе вк</a></p>
+      </div>
+        <div class="icon-square flex-shrink-0 me-3">
+            <img src="img/icons_svg/poster.svg" alt="icon" width="200px" height="200px">
+        </div>
+        <br>
+    </div>
+
+  </div>
+    <section>
+        <div class="container px-4">
+        <hr class="text-white text-center col-12">
+<h1 class="pb-2 text-white" >F.A.Q. :</h1>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Со скольки лет можно начинать обучение?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        В нашу школу приходят ученики самых разных возрастов - как дети, так и взрослые. Преподаватели могут найти подход к любому, но начинать лучше стоит не раньше 6 лет.
       </div>
     </div>
-  
-  </section>
-  </main>
-    
-    <div id="footer"></div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Что нужно для учёбы?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Для учёбы необходима маленькая тетрадь и большое усердие! Также желательно приобрести свои палочки, но при необходимости можно пользоваться палочками со студии.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        У меня уже есть небольшой опыт. Мне придётся снова начинать с нуля?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Конечно нет! Наши преподаватели способны подстроить программу обучения под любые запросы и уровни игры.
+      </div>
+    </div>
+  </div>
+            <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Каким будет расписание занятий?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Занятия в нашей школе проходят с 9 до 20, каждый день. Вы можете самостоятельно установить свой график в зависимости от абонемента и наличия свободных установок.
+      </div>
+    </div>
+  </div>
+</div></div></section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+</main>
+
+{% include "includes/footer.html" %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+</body>
 </html>
