@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Студия</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=" img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script> 
+      $(function(){
+        $("#header").load("includes/header.html");
+        $("#footer").load("includes/footer.html"); 
+      });
+    </script> 
+</head>
+<body>
+  <div id="header"></div>
+<main style="background-image: url(img/background.png);">
+  
+
+  <div class="container marketing">
+    <div class="px-4 py-5 text-center text-white">
+      <h1 class="display-5 fw-bold text-body-emphasis" style="color: var(--pink-color);">Преподаватели</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"> Наши преподаватели - настоящие профессионалы своего дела. Это потрясающие музыканты и наставники, которые находят общий язык как со взрослыми, так и с детьми.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+      </div>
+    </div>
+    <hr class="text-white text-center col-12">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h1 class="featurette-heading fw-bold lh-1" style="color: var(--pink-color);">Рома Тян </h1>
+      <br>
+      <ul class="lead">
+        <li><span>15 лет опыта игры на ударных</span></li>
+        <li><span>9 лет преподавательский стаж</span></li>
+        <li><span>Основатель Шоу Барабанщиков +2, Школы Барабанов +2</span></li>
+        <li><span>Концертный директор Шоу Барабанщиков +2, группы Ключи от Маркова</span></li>
+        <li><span>Ученики - лауреаты международного фестиваля Drum Wave 2021, 2022 и 2023</span></li>
+      </ul>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/tutors/roma.png" alt="roma" width="400" height="400"></img>
+    </div>
+  </div>
+  
+
+
+<hr class="text-white text-center col-12">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h1 class="featurette-heading fw-bold lh-1" style="color: var(--pink-color);">Саша Чупров </h1>
+    <br>
+    <ul class="lead">
+      <li><span>11 лет опыта игры на ударных</span></li>
+      <li><span>6 лет преподавательский стаж</span></li>
+      <li><span>Барабанщик Шоу Барабанщиков +2, группы Ключи от Маркова</span></li>
+      <li><span>Ученики - лауреаты и дипломанты международного фестиваля Drum Wave 2023</span></li>
+    </ul>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/tutors/sasha.png" alt="sasha" width="400" height="400"></img>
+  </div>
+</div>
+
+
+</div>
+
+
+
+</main>
+
+<div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+</body>
+</html>

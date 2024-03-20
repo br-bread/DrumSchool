@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Студия</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=" img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script> 
+      $(function(){
+        $("#header").load("includes/header.html");
+        $("#footer").load("includes/footer.html"); 
+      });
+    </script> 
+</head>
+<body>
+  <div id="header"></div>
+<main style="background-image: url(img/background.png);">
+  
+  
+  <div id="carouselExampleIndicators" class="carousel slide">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="studio-carousel carousel-item active">
+        <img src="img/studio/studio1.jpg" class="d-block w-100" alt="studio">
+      </div>
+      <div class="studio-carousel carousel-item">
+        <img src="img/studio/studio2.jpg" class="d-block w-100" alt="studio">
+      </div>
+      <div class="studio-carousel carousel-item">
+        <img src="img/studio/drums1.jpg" class="d-block w-100" alt="studio">
+      </div>
+      <div class="studio-carousel carousel-item">
+        <img src="img/studio/drums2.jpg" class="d-block w-100" alt="studio">
+      </div>
+      <div class="studio-carousel carousel-item">
+        <img src="img/studio/drums3.jpg" class="d-block w-100" alt="studio">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+  
+  
+
+  <div class="container marketing">
+    <div class="px-4 py-5  text-center text-white">
+      <h1 class="display-5 fw-bold text-body-emphasis" style="color: var(--tropical-indigo);">Музыкальная Студия</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"> Студия в Сыктывкаре по адресу Орджоникидзе 49а. Здесь проходят занятия по барабанам, гитаре и вокалу. К нам часто приходят репетировать и записываться ученики других школ, молодые группы Сыктывкара и барабанные ансамбли.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+      </div>
+    </div>
+    <hr class="text-white text-center col-12">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h1 class="featurette-heading fw-normal lh-1" style="color: var(--tropical-indigo);">Репетиции для групп и музыкантов </h1>
+      <p class="lead text-white">Студия хорошо звукоизолирована, специально для репетиций подготовлена заглушенная барабанная установка, необходимые усилители и гитарные процессоры, In-Ear система.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/studio/reps1.jpg" alt="studio" width="430" height="430"></img>
+    </div>
+  </div>
+  
+
+
+<hr class="text-white text-center col-12">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h1 class="featurette-heading fw-normal lh-1" style="color: var(--tropical-indigo);">Профессиональное оборудование для записи </h1>
+    <p class="lead text-white">Студия оснащена всей необходимой аппаратурой для качественной записи звука. У нас записываются группы Ключи от Маркова, Offesso, шоу-программа барабанщиков +2.</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/studio/reps2.jpg" alt="studio" width="430" height="430"></img>
+  </div>
+</div>
+
+
+</div>
+
+
+
+</main>
+
+<div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+</body>
+</html>
