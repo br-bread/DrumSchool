@@ -24,6 +24,21 @@ section {
     padding: 0px 0;
 }
 
+.floating-title, .sliding-pic-1, .sliding-pic-2 {
+  transform: translate(0px, 130%);
+  opacity: 0;
+}
+
+.sliding-block, .sliding-text-1, .sliding-list-1 {
+  transform: translate(-90em, 0px);
+  opacity: 0;
+}
+
+.sliding-text-2, .sliding-list-2 {
+  transform: translate(90em, 0px);
+  opacity: 0;
+}
+
 .main-heading {
     color: white;
     text-shadow: 0 3px 4px rgba(0,0,0,.6);

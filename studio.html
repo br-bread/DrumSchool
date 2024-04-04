@@ -13,15 +13,14 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/ScrollTrigger.min.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script> 
-      $(function(){
-        $("#header").load("includes/header.html");
-        $("#footer").load("includes/footer.html"); 
-      });
-    </script> 
+    <script src="js/studio.js" defer></script>
+
+
 </head>
 <body>
   <header class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3 ">
@@ -38,7 +37,7 @@
 
 
   <div class="container marketing">
-    <div class="px-4 py-5  text-center text-white">
+    <div class="px-4 py-5  text-center text-white floating-title">
       <h1 class="display-5 fw-bold text-body-emphasis" style="color: var(--tropical-indigo);">Музыкальная Студия</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4"> Студия в Сыктывкаре по адресу Орджоникидзе 49а. Здесь проходят занятия по барабанам, а ещё вот это, вот это и вот то. К нам часто приходят репетировать и записываться те, те, а ещё вон те.</p>
@@ -47,13 +46,13 @@
       </div>
     </div>
 
-  <div class="row featurette">
+  <div class="row featurette description-1">
     <div class="col-md-7">
-      <h1 class="featurette-heading fw-normal lh-1" style="color: var(--tropical-indigo);">Репетиции для групп и музыкантов </h1>
-      <p class="lead text-white">Текст про то какая студия крутая и как к нам ходит весь сыктывкар</p>
+      <h1 class="featurette-heading fw-normal lh-1 sliding-text-1" style="color: var(--tropical-indigo);">Репетиции для групп и музыкантов </h1>
+      <p class="lead text-white sliding-text-1">Текст про то какая студия крутая и как к нам ходит весь сыктывкар</p>
     </div>
     <div class="col-md-5">
-      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/placeholder.png" alt="studio" width="500" height="500"></img>
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto sliding-pic-1" src="img/placeholder.png" alt="studio" width="500" height="500"></img>
     </div>
   </div>
   
@@ -61,13 +60,13 @@
 
 <hr class="text-white text-center col-12">
 
-<div class="row featurette">
-  <div class="col-md-7 order-md-2">
+<div class="row featurette description-2" style="overflow: hidden;">
+  <div class="col-md-7 order-md-2 sliding-text-2">
     <h1 class="featurette-heading fw-normal lh-1" style="color: var(--tropical-indigo);">Профессиональное оборудование для записи </h1>
-    <p class="lead text-white">Текст про то чё классного у нас есть на студии</p>
+    <p class="lead text-white sliding-text-2">Текст про то чё классного у нас есть на студии</p>
   </div>
   <div class="col-md-5 order-md-1">
-    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/placeholder.png" alt="studio" width="500" height="500"></img>
+    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto sliding-pic-2" src="img/placeholder.png" alt="studio" width="500" height="500"></img>
   </div>
 </div>
 

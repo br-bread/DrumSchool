@@ -13,25 +13,27 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/ScrollTrigger.min.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script> 
-      $(function(){
-        $("#header").load("includes/header.html");
-        $("#footer").load("includes/footer.html"); 
-      });
-    </script> 
+    <script src="js/main.js" defer></script>
+    
 </head>
 <body>
-  <header class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3 ">
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+  <div class="">
+    <div class="">
+
+
+  <header class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 hdr">
       <li><a href="" class="nav-link px-2 link-light">Главная</a></li>
       <li><a href="tutors.html" class="nav-link px-2 link-light">Преподаватели</a></li>
       <li><a href="studio.html" class="nav-link px-2 link-light">Студия</a></li>
-      <hr class="text-white text-center col-12">
     </ul>
-  
+    <hr class="text-white text-center col-12">
   </header>
 <main style="background-image: url(img/background.png);">
   
@@ -46,8 +48,8 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-10 text-center">
-                    <p style="color: white; font-size: 2em;">
+                  <div class="col-lg-12 text-center subheading">
+                    <p style="color: white; font-size: 1.7em;">
                       г.Сыктывкар, ул.Орджоникидзе 49а <b style="color: var(--pink-color)">|</b> ✆ 89125470345
                     </p>
                   </div>
@@ -71,22 +73,22 @@
         </div>
     </div>
 <section>
-      <div class="container px-4 py-4">
+      <div class="container px-4 py-4 features">
           <hr class="text-white text-center col-12">
 <h1 class="pb-2 text-white display-5" >С нами ты сможешь:</h1>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-white">
-      <div class="col d-flex align-items-start">
+      <div class="col d-flex align-items-start floating-title">
         <div class="icon-square flex-shrink-0 me-3">
             <img src="img/icons_svg/drumset.svg" alt="icon" width="60px" height="60px">
         </div>
         <div>
           <h2 style="color: var(--pink-color); ">Покорить ударную установку</h2>
             <br>
-          <p class="lead">Обучаем игре на барабанах с нуля! Мы считаем, что с верным подходом к обучению хороших результатов может добиться каждый</p>
+          <p class="lead floating-subtitle">Обучаем игре на барабанах с нуля! Мы считаем, что с верным подходом к обучению хороших результатов может добиться каждый</p>
 
         </div>
       </div>
-      <div class="col d-flex align-items-start">
+      <div class="col d-flex align-items-start floating-title">
         <div class="icon-square flex-shrink-0 me-3">
           <img src="img/icons_svg/music.svg" alt="icon" width="60px" height="60px">
         </div>
@@ -96,7 +98,7 @@
           <p class="lead">Поможем записать на видео кавер любимой песни! В нашей студии для этого даже есть специальный декорированный уголок</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
+      <div class="col d-flex align-items-start floating-title">
         <div class="icon-square flex-shrink-0 me-3">
           <img src="img/icons_svg/concert.svg" alt="icon" width="60px" height="60px">
         </div>
@@ -109,15 +111,16 @@
       </div>
 
     </div>
-          <div class="col-12 text-center">
-              <h3 class="pb-2 text-white" >Первое занятие - <b style="color: var(--pink-color)">бесплатно</b>!</h3>
-          </div>
+          
   </div>
-
+  <br>
+  <div class="col-12 text-center">
+      <h3 class="pb-2 text-white" >Первое занятие - <b style="color: var(--pink-color)">бесплатно</b>!</h3>
+  </div>
 </section>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center">
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center actions">
 
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden sliding-block">
       <div class="my-3 py-3">
         <h2 class="display-5 text-white">Записаться на занятия</h2>
           <p class="lead text-white main-link">Чтобы записаться, напишите нам в <a href="https://vk.com/romatyanschool">вк</a></p>
@@ -127,7 +130,7 @@
         </div>
     </div>
 
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden sliding-block">
       <div class="my-3 p-3">
         <h2 class="display-5 text-white">Шоу барабанщиков</h2>
         <p class="lead text-white main-link">Посмотреть наши выступления можно в <a href="https://vk.com/drumshowplus2">группе вк</a></p>
@@ -210,15 +213,10 @@
       </div>
   </div>
 </footer>
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 5000
-    })
-  });
-</script>
 </body>
 </html>

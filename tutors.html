@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Студия</title>
+    <title>Преподаватели</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -13,15 +13,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/ScrollTrigger.min.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script> 
-      $(function(){
-        $("#header").load("includes/header.html");
-        $("#footer").load("includes/footer.html"); 
-      });
-    </script> 
+    <script src="js/tutors.js" defer></script>
 </head>
 <body>
   <header class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3 ">
@@ -37,7 +34,7 @@
   
 
   <div class="container marketing">
-    <div class="px-4 py-5 text-center text-white">
+    <div class="px-4 py-5 text-center text-white floating-title">
       <h1 class="display-5 fw-bold text-body-emphasis" style="color: var(--pink-color);">Преподаватели</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4"> Наши преподаватели - настоящие профессионалы своего дела. Это потрясающие музыканты и наставники, которые находят общий язык как со взрослыми, так и с детьми.</p>
@@ -46,17 +43,17 @@
       </div>
     </div>
 
-  <div class="row featurette">
+  <div class="row featurette tutor-1">
     <div class="col-md-7">
       <h1 class="featurette-heading fw-bold lh-1" style="color: var(--pink-color);">Рома Тян </h1>
       <br>
       <ul class="lead">
-        <li><span>N лет опыта игры на ударных</span></li>
-        <li><span>M лет преподавательский стаж</span></li>
-        <li><span>Ученики - лауреаты и дипломанты международного фестиваля Drum Wave 2021, 2022 и 2023</span></li>
-        <li><span>Ещё достижения</span></li>
-        <li><span>Ещё достижения</span></li>
-        <li><span>...</span></li>
+        <li class="sliding-list-1"><span>N лет опыта игры на ударных</span></li>
+        <li class="sliding-list-1"><span>M лет преподавательский стаж</span></li>
+        <li class="sliding-list-1"><span>Ученики - лауреаты и дипломанты международного фестиваля Drum Wave 2021, 2022 и 2023</span></li>
+        <li class="sliding-list-1"><span>Ещё достижения</span></li>
+        <li class="sliding-list-1"><span>Ещё достижения</span></li>
+        <li class="sliding-list-1"><span>...</span></li>
       </ul>
     </div>
     <div class="col-md-5">
@@ -68,17 +65,17 @@
 
 <hr class="text-white text-center col-12">
 
-<div class="row featurette">
+<div class="row featurette tutor-2" style="overflow: hidden;">
   <div class="col-md-7 order-md-2">
     <h1 class="featurette-heading fw-bold lh-1" style="color: var(--pink-color);">Саша Чупров </h1>
     <br>
     <ul class="lead">
-      <li><span>N лет опыта игры на ударных</span></li>
-        <li><span>M лет преподавательский стаж</span></li>
-        <li><span>Ученики - лауреаты и дипломанты международного фестиваля Drum Wave 2021, 2022 и 2023</span></li>
-        <li><span>Ещё достижения</span></li>
-        <li><span>Ещё достижения</span></li>
-        <li><span>...</span></li>
+        <li class="sliding-list-2"><span>N лет опыта игры на ударных</span></li>
+        <li class="sliding-list-2"><span>M лет преподавательский стаж</span></li>
+        <li class="sliding-list-2"><span>Ученики - лауреаты и дипломанты международного фестиваля Drum Wave 2021, 2022 и 2023</span></li>
+        <li class="sliding-list-2"><span>Ещё достижения</span></li>
+        <li class="sliding-list-2"><span>Ещё достижения</span></li>
+        <li class="sliding-list-2"><span>...</span></li>
     </ul>
   </div>
   <div class="col-md-5 order-md-1">
